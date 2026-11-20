@@ -1,0 +1,47 @@
+import { LitElement } from 'lit';
+import type { PropertyValues, TemplateResult } from 'lit';
+import { OscdFilledButton } from '@omicronenergy/oscd-ui/button/OscdFilledButton.js';
+import { OscdDialog } from '@omicronenergy/oscd-ui/dialog/OscdDialog.js';
+import { OscdOutlinedSelect } from '@omicronenergy/oscd-ui/select/OscdOutlinedSelect.js';
+import { OscdSelectOption } from '@omicronenergy/oscd-ui/select/OscdSelectOption.js';
+import { OscdSelectionList } from '@omicronenergy/oscd-ui/selection-list/OscdSelectionList.js';
+import { OscdTextButton } from '@omicronenergy/oscd-ui/button/OscdTextButton.js';
+import { OscdOutlinedTextField } from '@omicronenergy/oscd-ui/textfield/OscdOutlinedTextField.js';
+declare const VirtualTemplateIed_base: typeof LitElement & import("@open-wc/dedupe-mixin").Constructor<import("@open-wc/scoped-elements/types.js").ScopedElementsHost> & import("@open-wc/scoped-elements/types.js").ScopedElementsHostConstructor;
+export default class VirtualTemplateIed extends VirtualTemplateIed_base {
+    static scopedElements: {
+        'oscd-filled-button': typeof OscdFilledButton;
+        'oscd-dialog': typeof OscdDialog;
+        'oscd-outlined-select': typeof OscdOutlinedSelect;
+        'oscd-select-option': typeof OscdSelectOption;
+        'oscd-selection-list': typeof OscdSelectionList;
+        'oscd-text-button': typeof OscdTextButton;
+        'oscd-outlined-text-field': typeof OscdOutlinedTextField;
+    };
+    doc?: XMLDocument;
+    docName?: string;
+    docVersion?: unknown;
+    locale?: string;
+    private functionDescriptions;
+    private lLN0Types;
+    private selectedLNodes;
+    private manufacturer;
+    private description;
+    private apName;
+    private dialog?;
+    protected willUpdate(changedProperties: PropertyValues<this>): void;
+    private get validPrimaryAction();
+    run(): Promise<void>;
+    private handleManufacturerInput;
+    private handleDescriptionInput;
+    private handleApNameInput;
+    private textFieldValue;
+    private handleSelectionChange;
+    private handleClose;
+    private handlePrimaryAction;
+    private renderLLN0s;
+    private getSelectionItems;
+    render(): TemplateResult;
+    static styles: import("lit").CSSResult;
+}
+export {};
